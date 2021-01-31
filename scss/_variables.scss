@@ -1,0 +1,12 @@
+$primaryColor: #ffbc00;
+$darkColor: #333;
+$lightColor: #f4f4f4;
+$mediumColor: #ccc;
+
+@function set-text-color($backgroundColor) {
+  @if (lightness($backgroundColor) > 50) {
+    @return #333;
+  } @else {
+    @return #fff;
+  }
+}

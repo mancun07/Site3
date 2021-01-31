@@ -1,0 +1,95 @@
+header#about {
+  background: #999 linear-gradient(180deg, #000 0, rgba(0, 0, 0, 0) 100%) !important;
+}
+
+section#about-A {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  .about-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+
+    .about-me {
+      grid-column: 2 / span 2;
+      background: $lightColor;
+      border-left: 2px solid $primaryColor;
+      padding: 20px;
+    }
+
+    .about-photo {
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .award-item__title {
+      font-weight: bold;
+      padding: 20px 0;
+    }
+  }
+}
+
+section#about-B {
+  background: $darkColor;
+  color: #fff;
+  padding-left: 1rem;
+  padding-right: 2rem;
+
+  .skills-item__content {
+    width: 100%;
+    background: $mediumColor;
+    height: 20px;
+
+    .skills-item__inner {
+      background: $primaryColor;
+      height: 100%;
+    }
+  }
+}
+
+section#about-C {
+  background: $lightColor;
+
+  .brands {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+
+    img {
+      width: 70%;
+    }
+  }
+}
+
+section#about-D {
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  .testimonials {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+
+    .testimonials-item__content {
+      border: 1px solid lightgrey;
+      padding: 1rem;
+    }
+
+    .testimonials-item__footer {
+      display: flex;
+      align-items: center;
+      margin-top: 1rem;
+
+      .testimonials-item__footer__image {
+        width: 50px;
+        padding-right: 8px;
+
+        img {
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}

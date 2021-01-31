@@ -1,0 +1,25 @@
+header#work {
+  background: #999 linear-gradient(180deg, #000 0, rgba(0, 0, 0, 0) 100%) !important;
+}
+
+section#work-A {
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  .works {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    .works-item {
+      overflow: hidden;
+
+      img {
+        transition: all 0.3s ease-out;
+        &:hover {
+          transform: scale(1.2);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

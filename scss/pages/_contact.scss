@@ -1,0 +1,80 @@
+header#contact {
+  background: #999 linear-gradient(180deg, #000 0, rgba(0, 0, 0, 0) 100%) !important;
+}
+
+section#contact-A {
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  .contact-form {
+    display: grid;
+    grid-template-areas:
+      "name email"
+      "subject phone"
+      "message message";
+    grid-gap: 1rem;
+
+    #name {
+      grid-area: name;
+    }
+
+    #email {
+      grid-area: email;
+    }
+
+    #subject {
+      grid-area: subject;
+    }
+
+    #phone {
+      grid-area: phone;
+    }
+
+    #message {
+      grid-area: message;
+    }
+
+    input,
+    textarea {
+      padding: 5px 10px;
+      border: 1px solid lightgrey;
+    }
+
+    input[type="submit"] {
+      grid-column: 1 / span 2;
+      margin: auto;
+      width: 50%;
+      cursor: pointer;
+      background: $darkColor;
+      color: #fff;
+      padding: 10px;
+
+      &:hover {
+        background: $primaryColor;
+      }
+    }
+  }
+}
+
+section#contact-B {
+  background: $darkColor;
+  color: #fff;
+
+  .contacts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+  }
+
+  .contacts-item {
+    &__title {
+      font-weight: bold;
+      padding: 10px 0;
+    }
+  }
+}
+
+section#contact-C {
+  background: $primaryColor;
+  color: #fff;
+}

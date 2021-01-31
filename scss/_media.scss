@@ -1,0 +1,100 @@
+@media (max-width: 768px) {
+  section#home-C .process,
+  section#about-D .testimonials {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  footer .footer {
+    flex-direction: column;
+    padding: 0.5rem;
+
+    .footer__socials {
+      i {
+        margin: 0 6px;
+      }
+    }
+  }
+
+  section#home-A .skills,
+  section#home-B .awards,
+  section#home-C .process,
+  section#about-A .about-wrapper,
+  section#about-D .testimonials,
+  section#contact-B .contacts {
+    grid-template-columns: 1fr;
+  }
+
+  section#about-A .about-wrapper .about-me {
+    grid-column: 1;
+  }
+
+  section#about-A .award-item,
+  .contacts-item {
+    margin-bottom: 40px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .testimonials-item {
+    padding-bottom: 40px;
+    padding-top: 40px;
+    border-bottom: 1px dashed $mediumColor;
+
+    &:last-child {
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+  }
+
+  section#about-D .testimonials .testimonials-item__footer {
+    justify-content: center;
+  }
+
+  section#about-C {
+    display: none;
+  }
+
+  .skills__item,
+  .process-item {
+    margin-bottom: 50px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  section#contact-A .contact-form {
+    grid-template-areas:
+      "name"
+      "email"
+      "subject"
+      "phone"
+      "message";
+  }
+
+  section#contact-A .contact-form input[type="submit"] {
+    grid-column: 1;
+  }
+}
+
+@media (max-width: 400px) {
+  header#main {
+    height: 50vh;
+  }
+
+  .navbar__menu a {
+    margin: 0;
+  }
+
+  .header__content {
+    display: none;
+  }
+}
